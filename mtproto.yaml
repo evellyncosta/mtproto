@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+    name: mtproto
+    labels:
+      app: mtproto
+spec:
+  containers:
+    - name: container-mtproto
+      image: telegrammessenger/proxy:latest
+      ports:
+        - containerPort: 8081
